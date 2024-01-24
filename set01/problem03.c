@@ -11,16 +11,16 @@ void output(int a, int b, int sum);
 int main()
 {
     int num1,num2,res;
-    num1=input();
-    num2=input();
+    num1=input("Enter num1");
+    num2=input("Enter num2");
     res=add(num1,num2);
     output(num1,num2,res);
     return 0;
 }
-int input()
+int input(char *msg)
 {
     int n;
-    printf("ENter num1 and num2 values ");
+    printf("%s",msg);
     scanf("%d",&n);
     return n;
 
