@@ -12,15 +12,14 @@ int main()
     int n1,n2,res;
     n1 = input();
     n2 = input();
-
     add(n1,n2,&res);
     output(n1,n2,res);
     return 0;
 }
 int input()
 {
-      int n;
-    printf("ENter n1 and n2 values ");
+    int n;
+    printf("ENter the number: ");
     scanf("%d",&n);
     return n;
 
