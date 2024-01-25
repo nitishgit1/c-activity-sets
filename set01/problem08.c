@@ -11,7 +11,8 @@ int main()
 {
     int n=input_array_size();
     int array[n];
-    input_array(n,array);
+    input_ar
+    ray(n,array);
     int sum=sum_n_array(n,array);
     output(n,array,sum);
     return 0;

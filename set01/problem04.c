@@ -4,26 +4,26 @@ void output(int a, int b, int sum);
 Write a C program to add two numbers using pass by reference
 */
 #include <stdio.h>
-int  input();
+void input( int *a, int *b);
 void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
 int main()
 {
     int n1,n2,res;
-    n1 = input();
-    n2 = input();
+    input(&n1,&n2);
     add(n1,n2,&res);
     output(n1,n2,res);
     return 0;
 }
-int input()
+void input(int *a,int *b)
 {
-    int n;
-    printf("ENter the number: ");
-    scanf("%d",&n);
-    return n;
+    printf("ENter the value of a : ");
+    scanf("%d",a);
+    printf("ENter the value of b : ");
+    scanf("%d",b);
+   
 
-
+ 
 }
 void add(int a,int b,int *sum)
 {
