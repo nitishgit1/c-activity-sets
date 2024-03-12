@@ -27,7 +27,11 @@ void output(int n, Complex c[n], Complex result);
 
 int main()
 {
-
+int n =get_n();
+Complex numbers[n];
+input_n_complex(n,numbers);
+Complex sum= add_n_complex(n,numbers);
+output(n,numbers,sum);
     return 0;
 }
 int get_n()
@@ -35,7 +39,7 @@ int get_n()
  int n;   
  printf("Enter the number of complex numbers to add");
  scanf("%d",&n);
- return 0;
+ return n;
 
 }
 
@@ -80,7 +84,7 @@ void output(int n,Complex c[n],Complex result){
     printf("THE %d complex numbers enterd are :\n",n);
     for(int i=0;i<n;i++)
     {
-printf("%.2f + %.2fi\n", c[i].real, c[i].imaginary);
+printf("%.f + %.fi\n", c[i].real, c[i].imaginary);
     }
-    printf("The sum of these complex numbers is: %.2f + %.2fi\n", result.real, result.imaginary);
+    printf("The sum of these complex number is : %.f + %.fi\n", result.real, result.imaginary);
 }    
