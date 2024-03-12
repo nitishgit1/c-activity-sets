@@ -1,6 +1,11 @@
+/*Write a C program to compare two strings, character by character.
+
 /*void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
 void output(char *string1, char *string2, int result);*/
+
+
+
 #include<stdio.h>
 void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
@@ -51,6 +56,7 @@ return 0;
 
 void output(char *string1,char *string2,int result)
 {
+    
     if(result<0){
         printf("%s is lesser than %s\n",string1,string2);
     } else if (result > 0)
@@ -58,5 +64,5 @@ void output(char *string1,char *string2,int result)
         printf("%s is greater than %s\n",string1,string2);
     }else
     { 
-        printf("%s is equal to %s\n",string1,string2);}    
-}
+        printf("%s is equal to %s\n",string1,string2);
+}}

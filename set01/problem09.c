@@ -17,7 +17,9 @@ return 0;
 
 }
 
-float input()
+float input()  
+
+
 {
     float n;
     printf("Enter the Number: ");
